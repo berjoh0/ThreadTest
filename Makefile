@@ -16,7 +16,8 @@ run: clean all
 	clear
 	./$(BIN)/$(EXECUTABLE)
 
-$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp $(SRC)/pt2/*.cpp
+#$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp $(SRC)/pt2/*.cpp
+$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) $^ -o $@ $(LIBRARIES)
 
 clean:
